@@ -6,7 +6,7 @@ const Navbar = async () => {
     const user = await getUser();
     return (
         <div className="bg-gray-100">
-            <div className="navbar container mx-auto flex justify-between items-center">
+            <div className="navbar container mx-auto flex justify-between items-center py-3 gap-10">
                 <div>
                     <button className="btn btn-ghost text-xl">Task</button>
                 </div>
