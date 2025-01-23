@@ -6,10 +6,11 @@ const Navbar = async () => {
     const user = await getUser();
     return (
         <div className="bg-gray-100">
-            <div className="navbar max-w-7xl mx-auto flex justify-between items-center">
+            <div className="navbar container mx-auto flex justify-between items-center">
                 <div>
                     <button className="btn btn-ghost text-xl">Task</button>
                 </div>
+                {/* dynamic route */}
                 <div>
                     <ul className="gap-3 flex">
                         <Link href="/">
