@@ -13,28 +13,28 @@ const Navbar = async () => {
                 <div>
                     <ul className="gap-3 flex">
                         <Link href="/">
-                            <button className="btn bg-green-200">Home</button>
+                            <button className="btn bg-green-200 border border-black">Home</button>
                         </Link>
                         {
                             user ? <Link href="/profile">
-                                <button className="btn bg-green-200">Profile</button>
+                                <button className="btn bg-green-200 border border-black">Profile</button>
                             </Link>
                                 :
                                 <Link href="/api/auth/login">
-                                    <button className="btn bg-green-200">Profile</button>
+                                    <button className="btn bg-green-200 border border-black">Profile</button>
                                 </Link>
                         }
                         {
                             user ?
                                 <>
                                     <Link href="/api/auth/logout">
-                                        <button className="btn bg-green-200">Log Out</button>
+                                        <button className="btn bg-green-200 border border-black">Log Out</button>
                                     </Link>
                                 </>
                                 :
                                 <>
                                     <Link href="/api/auth/login">
-                                        <button className="btn bg-green-200">Log In</button>
+                                        <button className="btn bg-green-200 border border-black">Log In</button>
                                     </Link>
                                 </>
                         }
