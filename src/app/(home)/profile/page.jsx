@@ -7,13 +7,13 @@ const profile = async () => {
     const user = await getUser();
     return (
         <div className="container mx-auto">
-            <h2 className="text-center text-3xl font-bold mt-10">Welcome to {user?.given_name} to your profile</h2>
+            <h2 className="text-center text-3xl font-bold mt-10">Welcome to  to your profile</h2>
 
-           {
+           {/* {
             user.picture && <div className="flex justify-center my-10">
             <img src={user?.picture} className="rounded-md w-[200px] h-[200px] border border-gray-200" alt=""  />
             </div>
-           }
+           } */}
 
         </div>
     );
