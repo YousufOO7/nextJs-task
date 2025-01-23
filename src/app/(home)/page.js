@@ -5,7 +5,7 @@ const Home = async () => {
   const data = await res.json();
 
   return (
-    <div className="pt-20">
+    <div>
       <h2 className="text-center text-3xl lg:text-5xl font-bold my-3">Home Page</h2>
 
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-5 lg:px-0 container mx-auto">

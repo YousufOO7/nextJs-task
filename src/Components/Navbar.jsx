@@ -5,7 +5,7 @@ const Navbar = async () => {
     const { getUser } = getKindeServerSession()
     const user = await getUser();
     return (
-        <div className="bg-gray-100 fixed w-full z-10">
+        <div className="bg-gray-100">
             <div className="navbar container mx-auto">
                 <div className="flex-1">
                     <a className="btn btn-ghost text-xl">Task</a>

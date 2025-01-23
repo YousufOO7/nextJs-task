@@ -3,7 +3,7 @@ import Navbar from "@/Components/Navbar";
 import Link from "next/link";
 
 const postDetails = async ({ params }) => {
-    const { id } = params;
+    const { id } = await params;
 
     const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
     const post = await res.json();
