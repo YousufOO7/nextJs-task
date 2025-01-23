@@ -5,14 +5,14 @@ const Home = async () => {
   const data = await res.json();
 
   return (
-    <div>
-      <h2 className="text-center text-3xl font-bold my-3">Home Page</h2>
+    <div className="pt-20">
+      <h2 className="text-center text-3xl lg:text-5xl font-bold my-3">Home Page</h2>
 
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-5 lg:px-0 container mx-auto">
         {data.map((post) => (
             <div key={post.id} className="card border border-black card-compact bg-base-100">
               <div className="card-body">
-                <Link href={`/post/${post.id}`} className="card-title">{post.title}</Link>
+                <Link href={`/post/${post.id}`} className="card-title hover:text-green-400">{post.title}</Link>
                 <p>{post.body}</p>
               </div>
             </div>

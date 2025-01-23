@@ -11,7 +11,7 @@ const postDetails = async ({ params }) => {
     return (
         <>
             <Navbar></Navbar>
-            <section className="min-h-screen">
+            <section className="min-h-screen pt-20">
                 <div className="flex justify-center mt-10">
                     <div key={post.id} className="card w-[350px]  border border-black card-compact bg-base-100">
                         <div className="card-body">
@@ -19,7 +19,7 @@ const postDetails = async ({ params }) => {
                             <p>{post.body}</p>
                             <div className="card-actions">
                                 <Link href="/">
-                                <button className="btn w-full btn-primary">Go Back Home</button>
+                                <button className="btn w-full btn-primary">Go To Home</button>
                                 </Link>
                             </div>
                         </div>
