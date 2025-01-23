@@ -7,11 +7,7 @@ const Navbar = async () => {
 
     return (
         <div className="bg-gray-100">
-            <div className="navbar container mx-auto flex justify-between items-center py-3 gap-10">
-                {/* Logo or Task Button */}
-                <div>
-                    <button className="btn bg-green-200 border border-black px-4 py-2 rounded-md">Task</button>
-                </div>
+            <div className="navbar container mx-auto flex justify-center py-3">
 
                 {/* Navigation Links */}
                 <div>
