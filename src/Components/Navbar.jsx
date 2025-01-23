@@ -6,9 +6,9 @@ const Navbar = async () => {
     const user = await getUser();
     return (
         <div className="bg-gray-100">
-            <div className="navbar container mx-auto gap-16 md:gap-[400px] lg:gap-[900px] items-center">
+            <div className="navbar max-w-7xl mx-auto flex justify-between items-center">
                 <div>
-                    <a className="btn btn-ghost text-xl">Task</a>
+                    <button className="btn btn-ghost text-xl">Task</button>
                 </div>
                 <div>
                     <ul className="gap-3 flex">
